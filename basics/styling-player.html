@@ -8,7 +8,12 @@
    {% endif %}
     <h3>Prerequisites</h3>
     <ul>
+{% if site.product_short == "Video Cloud" %}
       <li>You have <a href="/get-started/basics/creating-player.html">created a player</a> in your Video Cloud account</li>
+   {% endif %}
+{% if site.product_short == "Beacon" or site.product_short == "CorpTV" %}
+      <li>You have <a href="/get-started/basics/players/creating-player.html">created a player</a> in your account</li>
+   {% endif %}
     </ul>
     <h3>Steps</h3>
     <ol class="bcls-tasklist-restart">
